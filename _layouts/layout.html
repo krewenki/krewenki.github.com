@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <title>{{ page.title }}</title>
+  <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/holman" />
+  <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen, projection" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+
+</head>
+<body>
+
+<div class="container">
+	
+<div id="header">
+  <a href="/">
+    <img src="http://gravatar.com/avatar/914ec0495254872b1c2b6c856c9af644?s=120"  class="avatar" />
+  </a>
+
+  <div id="me">
+    <a href="/">
+      <span id="warren">warren</span>
+      <span id="krewenki">krewenki</span>
+    </a>
+  </div>
+
+
+  <div class="site">
+    <a href="https://github.com/krewenki" id="github">
+      <img src="/images/github.png" alt="github" title="@krewenki on GitHub" height="16" width="16" />
+    </a>
+    <a href="https://twitter.com/WarrenKrewenki" id="twitter">
+      <img src="/images/twitter.png" alt="twitter" title="@WarrenKrewenki on Twitter" height="16" width="16" />
+    </a>
+    <a href="http://feeds.feedburner.com/holman" id="rss">
+      <img src="/images/rss.png" alt="rss" title="Subscribe to this blog's RSS feed" height="16" width="16" />
+    </a>
+	<a href="/about.html" id="about">
+      <img src="/images/about.png" alt="rss" title="About" height="16" width="16" />
+	</a>
+  </div>
+<!--
+	<h4 style="text-align: right;">Projects</h4>
+	<div id="sections">
+		<div><a>Hello</a></div>
+	</div>
+-->
+
+</div>
+
+{{ content }}
+
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-74729-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
