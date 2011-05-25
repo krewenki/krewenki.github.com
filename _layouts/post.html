@@ -8,9 +8,11 @@ layout: layout
     {{ content }}
   </div>
 
-<!--	<div id="commentsContainer">
-		<h3>Comments</h3>
+	<div id="comments">
+		<h2>Comments</h2>
+		<div id="fb-root"></div>
+		<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+		<fb:comments href="http://krewenki.github.com{{ page.url }}" num_posts="10" width="600"></fb:comments>		
+	</div>
 
-
-	</div> -->
 </div>
